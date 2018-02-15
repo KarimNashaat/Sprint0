@@ -1,0 +1,19 @@
+git init 
+git add .
+git commit -m "I added the three files"
+git rm 3.1GitBranching.txt
+git reset HEAD 3.1GitBranching.txt
+git checkout -- 3.1GitBranching.txt
+git remote add gitrepo https://github.com/KarimNashaat/Sprint0.git
+git push -u gitrepo master
+touch README.md
+nano README.md
+git branch ReadMe
+git checkout ReadMe
+git add README.md
+git commit -m "I added the README.md to ReadMe branch"
+git checkout Master
+git merge ReadMe
+git add AllMyCommands.txt
+git commit -m"I added AllMyCommands.txt"
+git push -u gitrepo 
